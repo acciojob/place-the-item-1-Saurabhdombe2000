@@ -1,2 +1,32 @@
+ .item {
+      width: 120px;
+      height: 120px;
+      font-size: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      /* border: 2px solid black; */
+      margin: 10px;
+    }
 
-/* Your CSS Code here. */
+    /* ---------- First Layout (3 spaced boxes) ---------- */
+    .holder-top {
+      display: flex;
+      justify-content: space-between; /* items touch ends with space between */
+      padding: 20px;
+    }
+
+    .green { background: green; }
+    .red { background: red; }
+    .blue { background: blue; }
+
+    /* ---------- Second Layout (wrap example) ---------- */
+    .holder-wrap {
+      display: flex;
+      flex-wrap: wrap;      /* THIS creates wrapping behaviour */
+      gap: 10px;            /* space between boxes */
+      padding: 20px;
+      width: 900px;         /* intentionally small to force wrapping */
+      border: 1px dashed #222;
+    }
